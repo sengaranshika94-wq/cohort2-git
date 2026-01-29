@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'moti';
+    src: url('Priestacy.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url("virat.jpeg");
+    background-position: center;
+    background-size: cover;
+    font-family: moti;
+    text-align: center;
+    padding: 15px;
+}
+#main h1{
+    font-size: 100px;
+    color: white;
+    font-weight: 600px;
+    padding: 5px;
+}
+#main button{
+    font-size: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    color: black;
+    font-family: moti;
+}
