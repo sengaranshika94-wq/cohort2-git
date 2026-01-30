@@ -28,6 +28,7 @@ html, body{
     border-radius: 20px;
     overflow: hidden;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .cards img{
