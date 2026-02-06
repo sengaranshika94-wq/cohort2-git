@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+h4{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(45deg, red, blue, pink);
+    
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1305&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#card{
+    width: 450px;
+    height: 650px;
+    background-color: rgba(55, 54, 54, 0.75);
+    border-radius: 12px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.858);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+#image{
+    width: 350px;
+    height: 350px;
+}
+
+
+#image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+
+#card h1{
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+
+    max-height: 2.4em;   
+    overflow: hidden;
+    color: #fff;
+}
+
+#card h2{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: #ddd;
+}
+
+
+#card h3{
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    color: #ccc;
+}
+
+
+#card button{
+    width: 40%;
+    padding: 10px;
+    font-size: 26px;
+    font-weight: 500;
+
+    background: rgba(198, 190, 190, 0.429);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: box-shadow 0.4s ease;
+}
+
+#card:hover #image img{
+    transform: scale(.95);
+}
+
+#card button:active{
+    transform: scale(0.95);
+    background: rgba(0,0,0,0.4);
+}
+ 
+#card:hover{
+    box-shadow: 0 0 25px rgba(168, 187, 224, 0.7);
+}
+
+@media (max-width: 500px){
+    h4{
+        font-size: 40px;
+    }
+
+    #card{
+        width: 90%;
+        height: 600px;
+    }
+
+    #image{
+        width: 100%;
+        height: 280px;
+    }
+
+    #card h1{ font-size: 32px; }
+    #card h2{ font-size: 24px; }
+    #card h3{ font-size: 18px; }
+}
